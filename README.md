@@ -13,6 +13,10 @@ then senktide after a 2-minute solution delay), from **senktide recordings only*
 > affect the manuscript's data; [DETECTION_FIX_2026-07.md](DETECTION_FIX_2026-07.md) records
 > what it was and why it does not apply.
 
+> **Status: a record, not a turnkey package.** These are the files that ran, unedited. The tree
+> has not been run end to end in this layout, so a helper function may be missing from a stage
+> folder, and the folder paths are those of the original machines.
+
 ## Layout
 
 Each stage folder is self-contained, because different stages ran on different versions of
