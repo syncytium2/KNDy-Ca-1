@@ -2,8 +2,9 @@
 
 No commit or tag in the development repository recorded "the code that produced the manuscript".
 This tree reconstructs it stage by stage: each stage is taken from the development commit that
-matches the date that stage ran on the manuscript's data. Those dates were read from the
-analysis archive itself (read-only) on 2026-10-15.
+matches when, and with what settings, that stage ran on the manuscript's data. Those run times
+and settings were read from the analysis archive itself (read-only) on 2026-10-15. Times are
+the wall clock of the machine that ran the code; the archive stores no time zone.
 
 The development repositories are `syncytium2/interface2` (MATLAB) and `syncytium2/fireflies`
 (R). They are private, so the commit IDs below cannot be looked up from outside; they are given
@@ -21,9 +22,9 @@ so the tree can be rebuilt and checked.
 | stage | repo | commit | date | basis |
 |---|---|---|---|---|
 | 1–3 import, ROIs, ΔF/F₀ | interface2 | `e2df03b3` | 2026-03-24 | The state of the code when detection began. These stages ran per recording when each was acquired (2024–2026), on whatever version was current then; that history is not reconstructed here. |
-| 4 custard | interface2 | `e2df03b3` | 2026-03-24 | The archive records the custard run as 25-Mar-2026; this is the last commit before it (the next is 2026-03-27). |
-| 5 slow | interface2 | `1cb1833d` ⚠ | 2026-04-13 | The archive records the slow run as 13-Apr-2026. Two commits are candidates, `3717ae40` (04-10) and `1cb1833d` (04-13). **Provisional** until the stored run time and the thresholds the slow run used settle it. |
-| 6 CMS | interface2 | `50ad7d2e` ⚠ | 2026-05-07 | Commit message "final run!". **Provisional** until the archive's stored CMS date confirms it. |
+| 4 custard | interface2 | `e2df03b3` | 2026-03-24 | The archive records the custard runs on 25-Mar-2026, 17:34–23:44. This is the last commit before them; the next is 2026-03-27. |
+| 5 slow | interface2 | `1cb1833d` | 2026-04-13 | The archive records the slow runs on 13-Apr-2026, 12:05–18:23, and every recording stores a `revised_threshold` identical to its custard thresholds. That reuse first appears in `1cb1833d` and is absent from the previous version (`3717ae40`); the slow script did not change again until July. The runs began about three hours before the commit time (15:01), so the earliest recordings ran on the working copy that was then committed. |
+| 6 CMS | interface2 | `50ad7d2e` | 2026-05-07 | The archive stores no CMS run date. It does store the settings: custard at threshold factor 2 minus slow `filtfilt` at factor 2. Only two versions select factor 2: `e5bb8125`, a test set to 30 files starting at file 30, and `50ad7d2e` ("final run!"), set to all files. Matched by settings, not by date. |
 | 7 export | interface2 | `66aae9aa` | 2026-05-23 | The commit that named the `short_window_5` mode; the export folder carries that name and date. |
 | 8 inactive-ROI removal | fireflies | `47040f4` | 2026-05-24 | The commit that extended the removal to the 5-minute exports. |
 

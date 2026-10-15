@@ -2,8 +2,8 @@ stage	repo	commit	entry_points	basis
 1_import_moco	interface2	e2df03b3	aCa0_TDtrawler.m	state of the code when detection began (2026-03-24); per-recording upstream processing dates span earlier versions
 2_roi_manual	interface2	e2df03b3	aCa3_ROIs.mlapp	as stage 1
 3_dfof0	interface2	e2df03b3	aCa4_ROI_dFoF0.m aCa4a_convert2indie.m	as stage 1
-4_custard	interface2	e2df03b3	aCa9a_fast_batch_autothreshold.m	archive fast custard run date 2026-03-25; last commit before it
-5_slow	interface2	1cb1833d	aCa9a_slow_batch_v3.m	PROVISIONAL: archive slow run date 2026-04-13; 1cb1833d vs 3717ae40 to be settled by stored timestamp / threshold reuse
-6_cms	interface2	50ad7d2e	aCa9z_custard_minus_slow.m	PROVISIONAL: commit 'final run!' 2026-05-07; to be confirmed by stored CMS date
+4_custard	interface2	e2df03b3	aCa9a_fast_batch_autothreshold.m	archive custard runs 2026-03-25 17:34-23:44 (machine wall clock); between e2df03b3 (03-24) and the next commit 5d2aac4b (03-27)
+5_slow	interface2	1cb1833d	aCa9a_slow_batch_v3.m	archive slow runs 2026-04-13 12:05-18:23; every slice stores revised_threshold equal to the custard thresholds (30/30, 24/24 fields), a feature first committed in 1cb1833d (15:01 that day) and absent from 3717ae40; slow script unchanged after 1cb1833d until July. Runs began before the commit, so the earliest slices ran on the working copy that became it
+6_cms	interface2	50ad7d2e	aCa9z_custard_minus_slow.m	no run date stored; stored settings (ROI_MLspike_sigmaest_2 minus ROI_slow_filtfilt_2) match i_tf=1, set only in e5bb8125 (a 30-file test from file 30) and 50ad7d2e ("final run!", all files); matched by settings, not by date
 7_export	interface2	66aae9aa	aCa5z_batch_fast_slow_mlspike_v4.m	commit that named the short_window_5 mode (2026-05-23); the paper's export folder
 8_reject	fireflies	47040f4	01-scripts/build_reject_table.R 01-scripts/apply_reject_table.R 01-scripts/load_raw.R 01-scripts/rejection_rule.R	commit that extended rejection to the short-window data (2026-05-24); writes the _clean files the paper used
