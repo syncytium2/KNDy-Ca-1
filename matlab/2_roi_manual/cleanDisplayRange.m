@@ -1,0 +1,13 @@
+% get the ideal display range for an image
+function disp_range = cleanDisplayRange( image_array, crop_pixels )
+% image_array is any bw image data set, m x n pixels
+% crop_pixels, number of pixels to ignore around edge of image
+cropped_image = image_array( crop_pixels:end-crop_pixels, crop_pixels:end-crop_pixels ); 
+        min_signal = prctile( ...
+            cropped_image, ...
+            1, 'all' );
+        max_signal = prctile( ...
+            cropped_image, ...
+            99, 'all' );
+        disp_range = [min_signal,max_signal];
+end

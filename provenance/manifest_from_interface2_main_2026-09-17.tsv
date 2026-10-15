@@ -1,0 +1,107 @@
+file	owner	licence	stages
+C:/Users/defazio/Documents/MATLAB/NoRMCorre-master/NoRMCorreSetParms.m	external	LICENSE.txt	import_moco,roi_manual
+C:/Users/defazio/Documents/MATLAB/NoRMCorre-master/apply_shifts.m	external	LICENSE.txt	import_moco,roi_manual
+C:/Users/defazio/Documents/MATLAB/NoRMCorre-master/cell2mat_ov.m	external	LICENSE.txt	import_moco,roi_manual
+C:/Users/defazio/Documents/MATLAB/NoRMCorre-master/cell2mat_ov_sum.m	external	LICENSE.txt	import_moco,roi_manual
+C:/Users/defazio/Documents/MATLAB/NoRMCorre-master/construct_grid.m	external	LICENSE.txt	import_moco,roi_manual
+C:/Users/defazio/Documents/MATLAB/NoRMCorre-master/construct_weights.m	external	LICENSE.txt	import_moco,roi_manual
+C:/Users/defazio/Documents/MATLAB/NoRMCorre-master/correct_bidirectional_offset.m	external	LICENSE.txt	import_moco,roi_manual
+C:/Users/defazio/Documents/MATLAB/NoRMCorre-master/dftregistration_min_max.m	external	LICENSE.txt	import_moco,roi_manual
+C:/Users/defazio/Documents/MATLAB/NoRMCorre-master/dftregistration_min_max_3d.m	external	LICENSE.txt	import_moco,roi_manual
+C:/Users/defazio/Documents/MATLAB/NoRMCorre-master/han.m	external	LICENSE.txt	import_moco,roi_manual
+C:/Users/defazio/Documents/MATLAB/NoRMCorre-master/mat2cell_ov.m	external	LICENSE.txt	import_moco,roi_manual
+C:/Users/defazio/Documents/MATLAB/NoRMCorre-master/motion_metrics.m	external	LICENSE.txt	import_moco,roi_manual
+C:/Users/defazio/Documents/MATLAB/NoRMCorre-master/normcorre_batch.m	external	LICENSE.txt	import_moco,roi_manual
+C:/Users/defazio/Documents/MATLAB/NoRMCorre-master/read_raw_file.m	external	LICENSE.txt	import_moco,roi_manual
+C:/Users/defazio/Documents/MATLAB/NoRMCorre-master/refreshdisp.m	external	LICENSE.txt	import_moco,roi_manual
+C:/Users/defazio/Documents/MATLAB/NoRMCorre-master/remove_boundaries.m	external	LICENSE.txt	import_moco,roi_manual
+C:/Users/defazio/Documents/MATLAB/NoRMCorre-master/saveastiff.m	external	LICENSE.txt	import_moco,roi_manual
+C:/Users/defazio/Documents/MATLAB/NoRMCorre-master/shift_reconstruct.m	external	LICENSE.txt	import_moco,roi_manual
+C:/Users/defazio/Documents/MATLAB/bfmatlab/bfCheckJavaMemory.m	external	NONE FOUND	import_moco,roi_manual
+C:/Users/defazio/Documents/MATLAB/bfmatlab/bfCheckJavaPath.m	external	NONE FOUND	import_moco,roi_manual
+C:/Users/defazio/Documents/MATLAB/bfmatlab/bfGetFileExtensions.m	external	NONE FOUND	import_moco,roi_manual
+C:/Users/defazio/Documents/MATLAB/bfmatlab/bfGetPlane.m	external	NONE FOUND	import_moco,roi_manual
+C:/Users/defazio/Documents/MATLAB/bfmatlab/bfGetReader.m	external	NONE FOUND	import_moco,roi_manual
+C:/Users/defazio/Documents/MATLAB/bfmatlab/bfInitLogging.m	external	NONE FOUND	import_moco,roi_manual
+C:/Users/defazio/Documents/MATLAB/bfmatlab/bfTestInRange.m	external	NONE FOUND	import_moco,roi_manual
+C:/Users/defazio/Documents/MATLAB/bfmatlab/bfopen.m	external	NONE FOUND	import_moco,roi_manual
+C:/Users/defazio/Documents/MATLAB/bfmatlab/private/is_octave.m	external	NONE FOUND	import_moco,roi_manual
+CNMF_E/OASIS_matlab/functions/GetSn.m	thirdparty	LICENSE.txt	custard,slow
+CaImAn-MATLAB-master/read_file.m	ours	-	import_moco,roi_manual
+CaImAn-MATLAB-master/utilities/prctfilt.m	ours	-	slow
+GetGoodROIs.m	ours	-	custard
+MeanMaxSTD.m	ours	-	import_moco,roi_manual
+TDcustard2.m	ours	-	custard,slow
+TDnoise2.m	ours	-	custard,slow
+aCa0_TDtrawler.m	ours	-	import_moco
+aCa3_ROIs.mlapp	ours	-	roi_manual
+aCa4_ROI_dFoF0.m	ours	-	dfof0
+aCa4a_convert2indie.m	ours	-	dfof0
+aCa5z_batch_fast_slow_mlspike_v4.m	ours	-	export
+aCa9a_fast_batch_autothreshold.m	ours	-	custard
+aCa9a_slow_batch_v3.m	ours	-	slow
+aCa9z_custard_minus_slow.m	ours	-	cms
+analyzeROIs2.m	ours	-	roi_manual
+arrayResize/arrayResize.m	thirdparty	LICENSE.txt	import_moco
+bestDivisor.m	ours	-	import_moco,roi_manual
+bfTime.m	ours	-	import_moco,roi_manual
+cleanDisplayRange.m	ours	-	roi_manual
+cropStack.m	ours	-	import_moco
+custardWrapper3.m	ours	-	custard,slow
+deltaFoverFzeroEmbedded.m	ours	-	dfof0,import_moco,roi_manual
+drawROI.m	ours	-	roi_manual
+explor/+brick/fftfrequencies.m	ours	-	custard,slow
+explor/+brick/interleave.m	ours	-	custard,slow
+explor/+brick/ismemberstr.m	ours	-	custard,slow
+explor/+brick/map.m	ours	-	custard,slow
+explor/+brick/num2str.m	ours	-	custard,slow
+explor/+brick/row.m	ours	-	custard,slow
+explor/+brick/strcat.m	ours	-	custard,slow
+explor/+brick/strcut.m	ours	-	custard,slow
+explor/+brick/structinit.m	ours	-	custard,slow
+explor/+brick/structmerge.m	ours	-	custard,slow
+export2igorAPP.m	ours	-	roi_manual
+export2igorBS.m	ours	-	dfof0
+filterData.m	ours	-	roi_manual,slow
+findOutliersMAXb.m	ours	-	import_moco
+findpeaksTD.m	ours	-	roi_manual
+fixfocus.m	ours	-	roi_manual
+getEvents.m	ours	-	roi_manual
+getROItraces2.m	ours	-	dfof0,roi_manual
+getROIvalues.m	ours	-	roi_manual
+if2_archive.m	ours	-	cms,export
+if2_archive_assert_writable.m	ours	-	cms
+if2_archive_variant.m	ours	-	cms,export
+if2_load_exp_timing.m	ours	-	export
+if2_norm_treatment.m	ours	-	export
+if2_paths.m	ours	-	cms,export
+if2_region_windows.m	ours	-	export
+if2_write_timing_regime.m	ours	-	export
+loadComplete3.m	ours	-	roi_manual
+loadFlatProj.m	ours	-	roi_manual
+loadFlatStackOpt.m	ours	-	dfof0
+loadROIdata2.m	ours	-	roi_manual
+localFWHdelta1D2.m	ours	-	roi_manual
+metadataNFrames.m	ours	-	import_moco,roi_manual
+minmax.m	ours	-	roi_manual
+mocoConfirm.m	ours	-	import_moco
+moveROIs.m	ours	-	roi_manual
+normArray.m	ours	-	import_moco
+normStack.m	ours	-	import_moco,roi_manual
+openETSbatch.m	ours	-	import_moco
+openETSui2.m	ours	-	roi_manual
+plotEvents.m	ours	-	roi_manual
+prepStack4SingleGauss.m	ours	-	import_moco,roi_manual
+processDFoF0.m	ours	-	dfof0,roi_manual
+projMeanMaxSTD.m	ours	-	import_moco
+projectMax.m	ours	-	import_moco
+replaceOutliersb.m	ours	-	import_moco
+ringCoordFromXY2.m	ours	-	roi_manual
+selectDataPoint.m	ours	-	roi_manual
+spikes/spk_autosigma.m	thirdparty	NONE FOUND	custard,slow
+stackViewer.m	ours	-	roi_manual
+structureROIs.m	ours	-	roi_manual
+structuredROIax.m	ours	-	roi_manual
+subMinStack.m	ours	-	import_moco,roi_manual
+tdResize.m	ours	-	import_moco
+td_moco2.m	ours	-	import_moco,roi_manual
