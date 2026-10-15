@@ -1,0 +1,25 @@
+#Replace paths with your paths on your computer. Relative to project root
+#Change name of this file to .Renviron
+
+DATA_FOLDER="./data" # if want to save in project folder or "path/example/data"
+
+OUTPUT_FOLDER="./output" # if want to save in project folder or "path/example/data"
+
+DATA_FILE_NAME="td_CalciumImaging_2025-12-16.csv"
+EXCEL_FILE_NAME="TD_CaImg_allData_2025-12-27.xlsx"
+
+FILE_PREFIX="TD_CaImg_"
+
+# type of images to save for plots. 
+# .png, .svg, or .pdf, for example
+PLOT_OUTPUT_FORMAT=".png"
+
+#save individual plot files?
+SAVE_PLOTS=FALSE
+
+# Windows only — uncomment on Windows, leave commented on macOS
+# PATH="${RTOOLS40_HOME}\usr\bin;${PATH}"
+# R_GSCMD="C:/Program Files/gs/gs9.54.0/bin/gswin64c.exe"
+# On macOS, Ghostscript is found automatically via PATH (install via Homebrew: brew install ghostscript)
+
+COMP_TYPE="windows" # change to "mac" on macOS

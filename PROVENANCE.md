@@ -27,6 +27,7 @@ so the tree can be rebuilt and checked.
 | 6 CMS | interface2 | `50ad7d2e` | 2026-05-07 | The archive stores no CMS run date. It does store the settings: custard at threshold factor 2 minus slow `filtfilt` at factor 2. Only two versions select factor 2: `e5bb8125`, a test set to 30 files starting at file 30, and `50ad7d2e` ("final run!"), set to all files. Matched by settings, not by date. |
 | 7 export | interface2 | `66aae9aa` | 2026-05-23 | The commit that named the `short_window_5` mode; the export folder carries that name and date. |
 | 8 inactive-ROI removal | fireflies | `47040f4` | 2026-05-24 | The commit that extended the removal to the 5-minute exports. |
+| 9 Shiny app (before/after plots) | fireflies | `2966490` | 2026-05-28 | The last change to the app or its plotting functions before July, so any plot exported between then and the submission came from this version. Inferred from that date, not from a stamp on the published figures. |
 
 The full file list, with each file's source commit and path, is
 [`provenance/files.tsv`](provenance/files.tsv). Rebuild and compare with:
@@ -46,7 +47,7 @@ from an App Designer callback, can be missed. Only a run from this tree proves a
 The development repositories mark commits written with an AI coding assistant (Claude Code,
 Anthropic) with a `Co-Authored-By` trailer. For every file in this tree, `provenance/files.tsv` names the
 commit that last changed it and whether that commit carries the trailer: none do in stages 1–6
-and 8; all three files in stage 7 do. A trailer records
+and 8; all three files in stage 7 do, and 8 of the 39 files in stage 9. A trailer records
 who wrote a commit in that repository; it does not by itself describe how the manuscript's
 analysis was done.
 

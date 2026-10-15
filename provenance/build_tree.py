@@ -32,7 +32,14 @@ for pin in csv.DictReader(open(os.path.join(here, 'pins.tsv')), delimiter='\t'):
             if rel in tree and rel not in files:
                 files.append(rel)
     else:
-        files = entries
+        files = []
+        for e in entries:
+            if e.endswith('/'):
+                files += [f for f in subprocess.run(['git', '-C', repo, 'ls-tree', '-r', '--name-only', commit, e],
+                                                   capture_output=True, text=True, check=True).stdout.split('\n') if f]
+            else:
+                files.append(e)
+    keep_layout = any(e.endswith('/') for e in entries)
     if pin['repo'] == 'interface2':
         for lic in ('CaImAn-MATLAB-master/license.txt', 'arrayResize/license.txt'):
             if lic in tree and any(f.startswith(lic.split('/')[0] + '/') for f in files):
@@ -40,7 +47,7 @@ for pin in csv.DictReader(open(os.path.join(here, 'pins.tsv')), delimiter='\t'):
     for src in sorted(set(files)):
         third = src.startswith(THIRD)
         if pin['repo'] == 'fireflies':
-            dst = os.path.join('R', stage, os.path.basename(src))
+            dst = os.path.join('R', stage, src if keep_layout else os.path.basename(src))
         elif third:
             dst = os.path.join('matlab', stage, 'thirdparty', src)
         else:
